@@ -1,0 +1,9 @@
+select avg(grade) from students;
+
+select age from students group by age having avg(grade) > 85;
+
+select max(grade) from students where age=18;
+
+select count(*),grade from students group by grade;
+
+select min(age) from students where grade < 80;
